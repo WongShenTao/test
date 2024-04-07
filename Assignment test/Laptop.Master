@@ -1,0 +1,489 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Laptop.Master.cs" Inherits="Assignment_test.Laptop" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+
+     <!--Google font-->
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+            rel="stylesheet"
+            />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Yellowtail&amp;display=swap"
+            rel="stylesheet"
+            />
+
+        <!-- Icons -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/vendors/font-awesome.css" />
+
+        <!--Slick slider css-->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/vendors/slick.css" />
+        <link rel="stylesheet" type="text/css" href="~/assets/css/vendors/slick-theme.css" />
+
+        <!-- Animate icon -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/vendors/animate.css" />
+
+        <!-- Themify icon -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/vendors/themify-icons.css" />
+
+        <!-- Bootstrap css -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/vendors/bootstrap.css" />
+
+        <!-- Theme css -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/style.css" />
+        <script src="/assets/commonResources/sweetalert.min.js"></script>
+        <!-- jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+
+    <!--  START Register CSS--->
+     <!-- Font-->
+        <link rel="stylesheet" type="text/css" href="~/assets/signUp/css/montserrat-font.css">
+        <link rel="stylesheet" type="text/css" href=" ~/assets/signUp/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+        <!-- Main Style Css -->
+        <link rel="stylesheet" href="~/assets/register/css/style.css"/>
+
+        <link rel="stylesheet" href="~/assets/css/vendors/font-awesome/fontawesome.css">
+
+        <link rel="stylesheet" type="text/css" href="~/assets/commonResources/sweetalert.min.css"/>
+        
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+     <link rel="stylesheet" href="~/assets/register/css/register.css">
+
+
+            <!--  END Register CSS--->
+
+    <!--  START forgotpassword CSS--->
+     <link rel="stylesheet" href="~/assets/forgotpassword/style.css"/>
+
+    <!--  END forgotpassword CSS--->
+
+        <!--  START  getotp CSS--->
+     <link rel="stylesheet" href="~/assets/getotp/getotp.css"/>
+
+    <!--  END getotp CSS--->
+
+            <!--  START  resetpassword CSS--->
+     <link rel="stylesheet" href="~/assets/resetpassword/resetpassword.css"/>
+
+    <!--  END resetpassword CSS--->
+
+                <!--  START  PRODUCT CSS--->
+     <link rel="stylesheet" href="~/assets/product/product.css"/>
+
+    <!--  END PRODUCT CSS--->
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="theme-color-1 dark" style="overflow: auto;">
+    <form id="form1" >
+        
+         <%--<!-- header start -->--%>
+        <header>
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="header-contact">
+                                <ul>
+                                    <li>Welcome to Our store Laptop Haven</li>
+                                    <li>
+                                        <i class="fa fa-phone" aria-hidden="true"></i>Call Us: 03-7899342
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-end">
+                            <ul class="header-dropdown">
+                            <%--    <li class="mobile-wishlist">
+                                 <a href=""><i class="fa fa-heart" aria-hidden="true"></i></a>
+                                </li>--%>
+                                <li class="onhover-dropdown mobile-account">
+                                    <i class="fa fa-user" aria-hidden="true"></i> My Account
+                                    <ul class="onhover-show-div">
+                                     
+                                        <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/CustomerProfile.aspx">My Profile</asp:HyperLink></li>
+<%--                                        <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Address.aspx">My Address</asp:HyperLink></li>--%>
+                                        <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/WebPages/viewOrdersPage.aspx">Check My Order</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/HomePage.aspx">Log Out</asp:HyperLink></li>
+                                        
+
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="main-menu">
+                            <div class="menu-left">
+                                <div class="brand-logo">
+                                    <a href="HomePage.aspx"
+                                       ><img
+                                            src="/assets/photo/headerlogo.png"
+                                            class="img-fluid blur-up lazyloaded"
+                                            alt=""
+                                            /></a>
+                                 
+                                </div>
+                            </div>
+
+                            <div class="menu-right pull-right">
+                                <div>
+                                    <nav id="main-nav">
+                                        <div class="toggle-nav">
+                                            <i class="fa fa-bars sidebar-bar"></i>
+                                        </div>
+                                        <ul id="main-menu" class="sm pixelstrap sm-horizontal hover-unset" data-smartmenus-id="1679117126596558" style="right: -410px" >
+                                            <li>
+                                                <div class="mobile-back text-end">
+                                                    Back
+                                                    <i class="fa fa-angle-right ps-2" aria-hidden="true" ></i>
+                                                </div>
+                                            </li>
+                                            <li><asp:HyperLink ID="home" runat="server" NavigateUrl="~/HomePage.aspx">Home</asp:HyperLink></li>
+                                            <li>
+                                                <%--<a>Laptops</a>--%>
+                                                <asp:HyperLink ID="Laptops" runat="server" NavigateUrl="~/Product.aspx">Laptops</asp:HyperLink>
+                                                <ul>
+                                         <li><asp:HyperLink ID="productbrand" runat="server" NavigateUrl="~/ProductBrand.aspx">Asus Brand</asp:HyperLink></li>
+                                                    <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ProductBrand.aspx">Acer Brand</asp:HyperLink></li>
+                                                    <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/ProductBrand.aspx">Dell Brand</asp:HyperLink></li>
+
+                                                </ul>
+                                            </li>
+                                            <li><asp:HyperLink ID="AboutUs" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink></li>
+                                            <li><asp:HyperLink ID="ContactUs" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink></li>
+                                            <li><asp:HyperLink ID="Login" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink></li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div>
+
+                                    <div class="icon-nav">
+                                        <ul>
+                                            <li class="onhover-div mobile-search">
+                                                <div >
+                                                    <img src="/assets/images/icon/search.png" onclick="openSearch()" class="img-fluid blur-up lazyloaded" alt="" />
+                                                    <i class="ti-search" onclick="openSearch()"></i>
+                                                </div>
+                                                <div id="search-overlay" class="search-overlay">
+                                                    <div>
+                                                        <span class="closebtn" onclick="closeSearch()" title="Close Overlay" >×</span>
+                                                        <div class="overlay-content">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-xl-12">
+                                                                        <form >
+                                                                            <div class="form-group">
+                                                                                <input type="text" class="form-control" id="exampleInputPassword1" 
+                                                                                       name="searchResult" placeholder="Search a Product" />
+                                                                            </div>
+                                                                            <button type="submit" class="btn btn-primary">
+                                                                                <i class="fa fa-search"></i>
+                                                                            </button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="onhover-div mobile-cart">
+                                                    <div>
+                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/WebPages/MyCart.aspx"><img
+                                                            src="/assets/images/icon/cart.png"
+                                                            class="img-fluid blur-up lazyloaded"
+                                                            alt=""
+                                                            />
+                                                        <i class="ti-shopping-cart"></i></asp:HyperLink>
+
+                                                    <%--<a href="~/WebPages/MyCart.aspx">
+                                                        <img
+                                                            src="/assets/images/icon/cart.png"
+                                                            class="img-fluid blur-up lazyloaded"
+                                                            alt=""
+                                                            />
+                                                        <i class="ti-shopping-cart"></i></a>--%>
+                                                    <span class="cart_qty_cls">1</span>
+                                                  
+                                                   <%-- <a onclick="loginNotification(event)">
+                                                        <img
+                                                            src="/assets/images/icon/cart.png"
+                                                            class="img-fluid blur-up lazyloaded"
+                                                            alt=""
+                                                            />
+                                                        <i class="ti-shopping-cart">=count</i></a>--%>
+                                                            </div>
+                                                    
+                                                <%--</div>--%>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- header end -->
+
+           <!-- breadcrumb start -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="page-title">
+                        <h2></h2>
+                           <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <%--<asp:HyperLink ID="home" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink></li>--%>
+                                 <asp:SiteMapPath ID="SiteMapPath2" runat="server">
+                                 </asp:SiteMapPath> </li>
+                            <%--<li class="breadcrumb-item active" aria-current="page">Login</a></li>--%>
+                        </ol>
+                    </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb End -->
+
+
+
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+
+        	<!-- footer -->
+		<footer class="footer-light">
+
+			<section class="section-b-space light-layout">
+				<div class="container">
+					<div class="row footer-theme partition-f">
+						<div class="col-lg-4 col-md-6">
+							<div class="footer-title footer-mobile-title">
+								<h4>about</h4>
+							</div>
+							<div class="footer-contant">
+								<div class="footer-logo"><img src="/assets/photo/headerlogo.png" alt=""></div>
+								<p>At Laptop Haven, we're dedicated to providing you with top-notch technology solutions tailored to your needs. Just as we care deeply about the world of laptops, we're committed to delivering excellence in every aspect of your experience with us. From superior customer service to cutting-edge products, we strive to be your haven for all things laptop-related. Laptop Haven: Where technology meets exceptional service.</p>
+								<div class="footer-social">
+									<ul>
+										<li><a href="https://www.facebook.com/asusmalaysia/"><i class="fa fa-facebook-f"></i></a></li>
+										<li><a href="mailto:cs_my@laptophaven.com"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="https://www.instagram.com/asusmalaysia/"><i class="fa fa-instagram"></i></a></li>
+									   
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col offset-xl-1">
+							<div class="sub-title">
+								<div class="footer-title">
+									<h4>Business Hour</h4>
+								</div>
+								<div class="footer-contant">
+									<ul>
+										<li>Monday - Saturday</li>
+										<li>exclude public holidays</li>
+										<li>10am - 10pm</li>
+										<li>close on sunday</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="sub-title">
+								<div class="footer-title">
+									<h4>Laptops</h4>
+								</div>
+								<div class="footer-contant">
+									<ul>
+										<li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/ProductBrand.aspx">Dell</asp:HyperLink></li>
+										<li><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/ProductBrand.aspx">Asus</asp:HyperLink></li>
+										<li><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/ProductBrand.aspx">Acer</asp:HyperLink></li>
+										<li><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/ProductBrand.aspx">Lenovo</asp:HyperLink></li>
+										<li><asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/ProductBrand.aspx">Huawei</asp:HyperLink></li>
+										<li><asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/ProductBrand.aspx">Hp</asp:HyperLink></li>
+										<li><asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/ProductBrand.aspx">Apple</asp:HyperLink></li>
+										<li><asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/ProductBrand.aspx">Razer</asp:HyperLink></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="sub-title">
+								<div class="footer-title">
+									<h4>store information</h4>
+								</div>
+								<div class="footer-contant">
+									<ul class="contact-list">
+										<li><i class="fa fa-map-marker"></i>Lot No. 170-01-11, 170, Persiaran Gurney, Pulau Tikus, 10250 George Town, Pulau Pinang</li>
+										<li><i class="fa fa-phone"></i>Call Us: Call Us: 03-7899342</li>
+										<li><i class="fa fa-envelope"></i>Email Us: <a href="#">Support@laptop.com</a></li>
+										<li><i class="fa fa-fax"></i>Fax: 03-5205200</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="sub-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6 col-md-6 col-sm-12">
+							<div class="footer-end">
+								<p><i class="fa fa-copyright" aria-hidden="true"></i> 2023-24 Laptop powered by
+									Laptop.Haven</p>
+							</div>
+						</div>
+						<div class="col-xl-6 col-md-6 col-sm-12">
+							<div class="payment-card-bottom">
+								<ul>
+									<li>
+										<a href="#"><img src="/assets/images/icon/visa.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img src="/assets/images/icon/mastercard.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img src="/assets/images/icon/paypal.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img src="/assets/images/icon/american-express.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img src="/assets/images/icon/discover.png" alt=""></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+
+
+    <!-- cookie bar start -->
+    <div class="cookie-bar">
+        <p>We use cookies to improve our site and your shopping experience. By continuing to browse our site you accept
+            our cookie policy.</p>
+        <a href="javascript:void(0)" class="btn btn-solid btn-xs">accept</a>
+        <a href="javascript:void(0)" class="btn btn-solid btn-xs">decline</a>
+    </div>
+    <!-- cookie bar end -->
+
+            <!-- tap to top -->
+    <div class="tap-top top-cls">
+        <div>
+            <i class="fa fa-angle-double-up"></i>
+        </div>
+    </div>
+    <!-- tap to top end -->
+
+
+          <!-- latest jquery-->
+        <script src="/assets/js/jquery-3.3.1.min.js"></script>
+
+        <!-- fly cart ui jquery-->
+        <script src="/assets/js/jquery-ui.min.js"></script>
+
+        <!-- exitintent jquery-->
+        <script src="/assets/js/jquery.exitintent.js"></script>
+        <script src="/assets/js/exit.js"></script>
+
+        <!-- slick js-->
+        <script src="/assets/js/slick.js"></script>
+
+        <!-- menu js-->
+        <script src="/assets/js/menu.js"></script>
+
+        <!-- lazyload js-->
+        <script src="/assets/js/lazysizes.min.js"></script>
+
+        <!-- Bootstrap js-->
+        <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Bootstrap Notification js-->
+        <script src="/assets/js/bootstrap-notify.min.js"></script>
+
+        <!-- Fly cart js-->
+        <script src="/assets/js/fly-cart.js"></script>
+
+        <!-- Theme js-->
+        <script src="/assets/js/theme-setting.js"></script>
+        <script src="/assets/js/script.js"></script>
+
+        <script>
+            $(window).on("load", function () {
+                setTimeout(function () {
+                    $("#exampleModal").modal("show");
+                }, 2500);
+            });
+
+            function openSearch() {
+                document.getElementById("search-overlay").style.display = "block";
+            }
+
+            function closeSearch() {
+                document.getElementById("search-overlay").style.display = "none";
+            }
+
+            function loginNotification(event) {
+                event.preventDefault();
+
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Login',
+                    text: 'Please login to proceed...',
+                    confirmButtonColor: '#548c5e',
+                    confirmButtonText: 'Continue',
+
+                }).then((result) => {
+                    /* Read more about isConfirmed, isDenied below */
+                    if (result.isConfirmed) {
+                        window.location.replace("");
+                    }
+                })
+            }
+        </script>
+
+
+    </form>
+
+      <%--      <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        --%>
+
+
+    
+</body>
+</html>

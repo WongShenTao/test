@@ -1,0 +1,43 @@
+﻿.formdiv {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    margin: 16px;
+    overflow-x: auto;
+}
+
+    .formdiv table td {
+        padding: 10px;
+    }
+
+        .formdiv table tr:hover {
+            background-color: #D6EEEE;
+            transition:ease-out 0.5s;
+        }
+
+    .formdiv table th {
+        padding: 10px;
+    }
+
+    .formdiv input {
+        border: grey 1px solid;
+        border-radius: 10px;
+        padding: 3px;
+    }
+
+.additional-formaction {
+    margin: 16px;
+}
+
+.submit-btn {
+    padding: 16px !important;
+}
+
+.output-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.CPUOption option {
+    display: inline-block;
+}

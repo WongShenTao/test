@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\RIS2\\Sem 3\\Assignment test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3382DBD8-A6EA-49A4-91BB-5FDF3648BC01}|Assignment test\\Assignment test.csproj|c:\\users\\user\\source\\repos\\ris2\\sem 3\\assignment test\\assignment test\\webpages\\mycart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3382DBD8-A6EA-49A4-91BB-5FDF3648BC01}|Assignment test\\Assignment test.csproj|solutionrelative:assignment test\\webpages\\mycart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyCart.aspx",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\RIS2\\Sem 3\\Assignment test\\Assignment test\\WebPages\\MyCart.aspx",
+              "RelativeDocumentMoniker": "Assignment test\\WebPages\\MyCart.aspx",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\RIS2\\Sem 3\\Assignment test\\Assignment test\\WebPages\\MyCart.aspx",
+              "RelativeToolTip": "Assignment test\\WebPages\\MyCart.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-04T13:35:43.648Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

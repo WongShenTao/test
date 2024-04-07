@@ -1,0 +1,37 @@
+﻿#password-criteria li.invalid, #phoneNumber-error.invalid, #email-exist.invalid, #email-error.invalid, #username-error.invalid, #name-error.invalid {
+    color: red;
+}
+
+#password-criteria li.valid {
+    color: green;
+}
+
+input.invalid {
+    border-color: red;
+}
+
+input.valid {
+    border-color: green;
+}
+
+.custom-validator {
+    color: red;
+    font-size: 15px;
+    display:  block;
+    /* Add any other styling properties here */
+}
+
+.center-btn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.labelCustom {
+    color: #929292;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+	<siteMapNode url="HomePage.aspx" title="Home" description="Welcome to Laptop.Haven">
+		<siteMapNode url="Login.aspx" title="Login" description="Login to your account">
+			<siteMapNode url="Register.aspx" title="Register" description="Create a new account" />
+			<siteMapNode url="ForgotPassword.aspx" title="Forgot Password" description="Recover your password">
+				<siteMapNode url="ResetPassword.aspx" title="Reset Password" description="Reset your password" />
+			</siteMapNode>
+		</siteMapNode>
+		<siteMapNode url="AboutUs.aspx" title="About Us" description="Learn more about us" />
+		<siteMapNode url="ContactUs.aspx" title="Contact Us" description="Come to Contact us" />
+		<siteMapNode url="CustomerProfile.aspx" title="User Profile" description="View and manage your profile">
+			<siteMapNode url="UpdateCustomerProfile.aspx" title="Update Profile" description="Update your profile" />
+		</siteMapNode>
+		<siteMapNode url="Product.aspx" title="Products" description="Browse our products">
+			<siteMapNode url="ProductDetail.aspx" title="Product Detail" description="View product details" />
+			<siteMapNode url="ProductBrand.aspx" title="Product Brands" description="Browse products by brand (category)">
+				<siteMapNode url="Productbrand.aspx?brand=acer" title="Acer" description="Products from Acer" />
+				<siteMapNode url="Productbrand.aspx?brand=dell" title="Dell" description="Products from Dell" />
+				<!-- Add more product brand categories as needed -->
+			</siteMapNode>
+		</siteMapNode>
+		<siteMapNode url="WebPages/MyCart.aspx" title="Cart" description="View and manage your shopping cart">
+			<siteMapNode url="EditCartProduct.aspx" title="Edit Cart Product" description="Edit items in your shopping cart" />
+			<siteMapNode url="WebPages/CheckOut.aspx" title="Checkout" description="Proceed to checkout">
+				<siteMapNode url="WebPages/PaymentPage.aspx" title="Payment" description="Make a payment">
+					<siteMapNode url="WebPages/PaymentSuccessful.aspx" title="Order Successful" description="Your order has been placed successfully" />
+				</siteMapNode>
+			</siteMapNode>
+		</siteMapNode>
+		<siteMapNode url="WebPages/viewOrdersPage.aspx" title="User Order History" description="View your order history" />
+	</siteMapNode>
+</siteMap>
